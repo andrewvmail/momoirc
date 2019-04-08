@@ -10,9 +10,9 @@ config :api, ApiWeb.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :api, Api.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "api_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+#config :api, Api.Repo,
+#  username: "postgres",
+#  password: "postgres",
+#  database: "api_test",
+#  hostname: "localhost",
+#  pool: Ecto.Adapters.SQL.Sandbox
