@@ -7,5 +7,7 @@ defmodule ApiWeb.Router do
 
   scope "/api", ApiWeb do
     pipe_through :api
+
+    post "/auth", AuthController, :index
   end
 end

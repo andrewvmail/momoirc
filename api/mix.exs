@@ -20,7 +20,7 @@ defmodule Api.MixProject do
   def application do
     [
       mod: {Api.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:jwt, :logger, :runtime_tools]
     ]
   end
 
@@ -37,7 +37,9 @@ defmodule Api.MixProject do
       {:phoenix_ecto, "~> 4.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 1.0"},
+      {:joken, "~> 2.0"},
+      {:jwt, git: "https://github.com/amezcua/jwt-google-tokens.git", branch: "master"},
     ]
   end
 
